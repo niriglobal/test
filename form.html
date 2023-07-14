@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Registration Form </title>
+     <link rel="stylesheet" type="text/css" href="form.css">
+     <link rel="icon" href="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--- To adding show password toogle <script>
+    function myFunction() {
+  var x = document.getElementById("Pass1");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+    </script>---->
+    <style>
+      .container{
+        background-color: rgba(0, 0, 0, 0.247);
+        color: white;
+      }
+    </style>
+   </head>
+<body id="registration">
+
+ 
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="insert.php" method="post">
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">PersonID</span>
+                <input type="text" placeholder="Enter your id" name="id" required>
+              </div>
+          <div class="input-box">
+            <span class="details">LastName</span>
+            <input type="text" placeholder="Enter your LastName" name="First_Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Firstname</span>
+            <input type="text" placeholder="Enter your FirstName" name="Last_name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="" name="City" required>
+          </div>
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" placeholder="" name="Address" required>
+          </div>
+          
+        <div class="button">
+          <input type="submit" name="save" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
